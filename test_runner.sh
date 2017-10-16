@@ -1,4 +1,5 @@
 #!/bin/bash
 
 # trigger ui tests here
-exit 0
+# explicitly fail here
+exit 1
