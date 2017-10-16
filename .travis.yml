@@ -1,0 +1,9 @@
+language: ruby
+dist: trusty
+script:
+  - ./github_status.sh pending
+  - exit 0
+after_success:
+  - ./github_status.sh success
+after_failure:
+  - ./github_status.sh failure
